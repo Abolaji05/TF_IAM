@@ -38,6 +38,7 @@ resource "aws_iam_policy" "ec2-policy" {
       {
         Action = [
           "ec2:Describe*",
+          "ec2:Modify*"
         ]
         Effect   = "Allow"
         Resource = "*"
